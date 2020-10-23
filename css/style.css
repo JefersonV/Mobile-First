@@ -1,0 +1,40 @@
+/*
+1. Posicionamiento
+2. Box model 
+3. tipografía
+4. Visuales (gradientes, sombras, etc).
+5. Otros
+*/
+
+:root {
+    --bitcoin-color: #F7931A;
+    --bitcoin-soft-color:#ffe9d5;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #282623;
+    --black: #201e1c;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+
+    --linear-gradient:207.8deg, #201E1C 16.69%, #F7931A 100%;
+    --font-sans:'DM Sans', sans-serif;
+	--font-inter:'Inter', sans-serif;
+	--size-300:300;
+	--size-400:400;
+	--size-500:500;
+	--size-700:700;
+	--background:#E5E5E5;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /*62.5% utilidad para fonts (rem)*/
+    font-size: 62.5%;
+    font-family: var(--font-sans);
+}
