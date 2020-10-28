@@ -8,6 +8,7 @@
 
 :root {
     --bitcoin-color: #F7931A;
+    --soft-orange: #f8e2c6;
     --bitcoin-soft-color:#ffe9d5;
     --secondary-blue: #1a9af7;
     --soft-blue: #e7f5ff;
@@ -27,7 +28,7 @@
 	--background:#E5E5E5;
 }
 
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -37,4 +38,75 @@ html {
     /*62.5% utilidad para fonts (rem)*/
     font-size: 62.5%;
     font-family: var(--font-sans);
+}
+
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);   
+}
+
+.header__image {
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+
+.header__description-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 50px;
+    text-align: center;
+    align-self: center;
+}
+
+.header__description-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--just-white);
+    line-height: 2.6rem;
+}
+
+.header__description-container p {
+    margin-top: 25px;
+    font-size: 1.4rem; /*14px*/
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--bitcoin-soft-color);
+}
+
+.header__button {
+    position: absolute;
+    left: calc(50% - 118px);
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background: var(--off-white);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.header__button span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('../assets/icons/down-arrow.svg');
 }
