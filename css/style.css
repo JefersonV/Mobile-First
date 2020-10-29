@@ -309,6 +309,7 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
+    min-width: 320px;
     height: 320px;
     background-image: url(../assets/img/bitcoinbaby2x.png);
     background-position: center;
@@ -430,6 +431,7 @@ header {
 
 .footer {
     width: 100%;
+    min-width: 320px;
     height: 130px;
     background-color: var(--bitcoin-color);
     display: flex;
